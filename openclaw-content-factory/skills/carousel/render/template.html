@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  /* FONTS: заменяются при генерации под brand-kit */
+  @import url('https://fonts.googleapis.com/css2?family={{HEADING_FONT}}:wght@400;600;700;900&family={{CODE_FONT}}:wght@400;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1350px; overflow: hidden; font-family: '{{HEADING_FONT}}', sans-serif; }
+  
+  /* === COVER === */
+  .cover {
+    width: 1080px; height: 1350px;
+    background: {{BG_GRADIENT}};
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .cover::before {
+    content: ''; position: absolute; top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, {{ACCENT_GLOW}} 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .cover .title {
+    font-size: 82px; font-weight: 900; color: {{TEXT_COLOR}};
+    text-align: center; line-height: 1.05; letter-spacing: -2px;
+    margin-bottom: 30px; z-index: 1; position: relative;
+  }
+  .cover .title .accent { color: {{ACCENT_COLOR}}; }
+  .cover .subtitle {
+    font-size: 30px; font-weight: 400; color: {{TEXT_SECONDARY}};
+    text-align: center; max-width: 800px; line-height: 1.4;
+    z-index: 1; position: relative;
+  }
+  .cover .terminal {
+    position: absolute; bottom: 80px;
+    font-family: '{{CODE_FONT}}', monospace; font-size: 20px;
+    color: {{ACCENT_DIM}}; letter-spacing: 2px;
+  }
+  .cover .handle {
+    position: absolute; bottom: 30px; right: 40px;
+    font-size: 18px; font-weight: 600; color: {{TEXT_MUTED}};
+  }
+  
+  /* === CONTENT SLIDE (with bg image) === */
+  .content-bg {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+  }
+  .content-bg .bg {
+    width: 100%; height: 100%; object-fit: cover;
+    position: absolute; top: 0; left: 0;
+  }
+  .content-bg .overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, {{BG_OVERLAY}} 40%);
+    padding: 60px 50px 50px;
+  }
+  .content-bg .time {
+    font-size: 72px; font-weight: 900; color: {{ACCENT_COLOR}};
+    letter-spacing: 4px; margin-bottom: 12px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+  }
+  .content-bg .label {
+    font-size: 28px; font-weight: 700; color: {{ACCENT_COLOR}};
+    text-transform: uppercase; letter-spacing: 6px; margin-bottom: 20px;
+  }
+  .content-bg .text {
+    font-size: 32px; font-weight: 400; color: {{TEXT_COLOR}};
+    line-height: 1.5;
+  }
+  .content-bg .text strong { color: {{ACCENT_COLOR}}; font-weight: 700; }
+  
+  /* === CONTENT SLIDE (with screenshot) === */
+  .content-ss {
+    width: 1080px; height: 1350px;
+    background: {{BG_SOLID}};
+    display: flex; flex-direction: column; position: relative; overflow: hidden;
+  }
+  .content-ss .top { padding: 50px 50px 20px; flex-shrink: 0; }
+  .content-ss .emoji-badge { font-size: 40px; margin-bottom: 12px; }
+  .content-ss .skill-name {
+    font-size: 48px; font-weight: 900; color: {{TEXT_COLOR}};
+    letter-spacing: -1px; margin-bottom: 8px;
+  }
+  .content-ss .stars {
+    font-family: '{{CODE_FONT}}', monospace; font-size: 18px;
+    color: {{ACCENT_COLOR}}; font-weight: 600; margin-bottom: 16px;
+  }
+  .content-ss .desc {
+    font-size: 26px; font-weight: 400; color: {{TEXT_SECONDARY}};
+    line-height: 1.5; max-width: 900px;
+  }
+  .content-ss .desc strong { color: {{TEXT_COLOR}}; font-weight: 700; }
+  .content-ss .screenshot-wrap {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    padding: 20px 60px 30px;
+  }
+  .content-ss .screenshot {
+    max-width: 100%; max-height: 100%; border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 8px 24px rgba(0,0,0,0.4),
+                0 0 0 1px {{BORDER_GLOW}};
+    object-fit: contain;
+  }
+  .content-ss .bottom {
+    padding: 0 50px 30px; display: flex;
+    justify-content: space-between; align-items: flex-end; flex-shrink: 0;
+  }
+  .content-ss .url {
+    font-family: '{{CODE_FONT}}', monospace;
+    font-size: 17px; color: {{TEXT_MUTED}};
+  }
+  .content-ss .handle { font-size: 18px; font-weight: 600; color: {{TEXT_MUTED}}; }
+  
+  /* === RESULT / COMPARISON === */
+  .result {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+  }
+  .result .bg { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; }
+  .result .overlay {
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+    background: {{BG_OVERLAY_FULL}};
+    display: flex; flex-direction: column; justify-content: center;
+    align-items: center; text-align: center; padding: 80px 60px;
+  }
+  .result .title {
+    font-size: 64px; font-weight: 900; color: {{ACCENT_COLOR}};
+    margin-bottom: 50px;
+  }
+  .result .before {
+    font-size: 36px; font-weight: 700; color: {{TEXT_MUTED}};
+    text-decoration: line-through; margin-bottom: 20px; line-height: 1.6;
+  }
+  .result .after {
+    font-size: 36px; font-weight: 700; color: {{TEXT_COLOR}}; line-height: 1.6;
+  }
+  .result .punchline {
+    font-size: 32px; font-weight: 700; color: {{ACCENT_COLOR}};
+    border-top: 2px solid {{ACCENT_DIM}}; padding-top: 30px; margin-top: 50px;
+  }
+</style>
+</head>
+<body><div id="slide"></div></body>
+</html>
