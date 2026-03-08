@@ -1,6 +1,6 @@
 # Team Roles Library
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 Pre-built role templates for rapid agent composition.
 

@@ -1,0 +1,22 @@
+{
+  "name": "vc-auto-publisher",
+  "version": "1.0.0",
+  "description": "Автоматическая публикация статей на VC.ru",
+  "main": "index.js",
+  "scripts": {
+    "publish": "node index.js",
+    "test": "node index.js --draft"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^16.3.1",
+    "marked": "^11.0.0",
+    "playwright": "^1.40.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "author": "OzonCheck",
+  "license": "MIT"
+}

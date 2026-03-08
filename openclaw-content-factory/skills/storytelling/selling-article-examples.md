@@ -1,6 +1,6 @@
 # Примеры и техники написания продающей статьи (Сердитов)
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Практическое руководство по написанию каждого блока --- с примерами из реальных текстов.
 

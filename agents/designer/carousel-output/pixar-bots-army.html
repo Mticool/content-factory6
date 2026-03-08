@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, initial-scale=1.0">
+  <title>Армия ботов Pixar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1080px;
+      background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+      font-family: 'Inter', sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    
+    /* Свет сверху */
+    .light-beam {
+      position: absolute; top: -200px; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(212,169,66,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    
+    /* Главный робот-босс */
+    .boss-bot {
+      position: absolute;
+      bottom: 80px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+    .boss-body {
+      width: 280px; height: 320px;
+      background: linear-gradient(135deg, #D4A942 0%, #E5A836 100%);
+      border-radius: 50px 50px 80px 80px;
+      position: relative;
+      box-shadow: 
+        0 20px 60px rgba(0,0,0,0.5),
+        inset 0 -20px 40px rgba(0,0,0,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.2);
+    }
+    .boss-head {
+      position: absolute;
+      top: -100px; left: 50%;
+      transform: translateX(-50%);
+      width: 200px; height: 200px;
+      background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+      border-radius: 50%;
+      box-shadow: 
+        0 15px 40px rgba(0,0,0,0.4),
+        inset 0 -15px 30px rgba(0,0,0,0.1);
+    }
+    .boss-star {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 90px;
+      color: #D4A942;
+      font-weight: 900;
+      text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .boss-eyes {
+      position: absolute;
+      top: 60px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; gap: 40px;
+    }
+    .eye {
+      width: 35px; height: 35px;
+      background: #2196F3;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(33,150,243,0.8);
+    }
+    .boss-label {
+      position: absolute;
+      bottom: -45px; left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #D4A942;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    
+    /* Армия сзади */
+    .army {
+      position: absolute;
+      top: 150px; left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      z-index: 1;
+    }
+    
+    .mini-bot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.85;
+    }
+    .mini-bot-body {
+      width: 80px; height: 100px;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(212,169,66,0.4);
+      border-radius: 20px 20px 30px 30px;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .mini-bot-head {
+      position: absolute;
+      top: -35px; left: 50%;
+      transform: translateX(-50%);
+      width: 60px; height: 60px;
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(212,169,66,0.4);
+      border-radius: 50%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mini-bot-icon {
+      font-size: 28px;
+    }
+    .mini-bot-name {
+      margin-top: 50px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      font-weight: 600;
+      text-align: center;
+    }
+    
+    /* Заголовок */
+    .title {
+      position: absolute;
+      top: 50px; left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 58px;
+      font-weight: 900;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.2;
+      z-index: 5;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    .title .highlight {
+      color: #D4A942;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="light-beam"></div>
+  
+  <!-- Заголовок -->
+  <div class="title">
+    Я построил<br>
+    <span class="highlight">армию ботов</span>
+  </div>
+  
+  <!-- Армия сзади -->
+  <div class="army">
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">📊</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Аналитик</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">🎨</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Дизайнер</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">🎬</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Видео</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">✍️</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Копирайтер</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">📈</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Стратег</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">🔍</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Researcher</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">💻</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Developer</div>
+    </div>
+    
+    <div class="mini-bot">
+      <div class="mini-bot-body">
+        <div class="mini-bot-head">
+          <div class="mini-bot-icon">🎯</div>
+        </div>
+      </div>
+      <div class="mini-bot-name">Маркетолог</div>
+    </div>
+  </div>
+  
+  <!-- Главный робот-босс впереди -->
+  <div class="boss-bot">
+    <div class="boss-head">
+      <div class="boss-star">✱</div>
+      <div class="boss-eyes">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+    </div>
+    <div class="boss-body"></div>
+    <div class="boss-label">БОСС</div>
+  </div>
+  
+</body>
+</html>

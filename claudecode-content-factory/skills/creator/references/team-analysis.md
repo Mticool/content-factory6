@@ -1,6 +1,6 @@
 # Team Analysis Framework
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 Extract what a human team does from a simple request.
 

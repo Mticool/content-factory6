@@ -1,6 +1,6 @@
 # Claude-Specific Prompt Engineering
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 Detailed guide for optimizing prompts specifically for Anthropic's Claude models.
 

@@ -1,0 +1,60 @@
+#!/bin/bash
+# Wrapper для чтения Telegram каналов
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CRED_FILE="$HOME/.openclaw/telegram-credentials"
+CONFIG_FILE="$SCRIPT_DIR/telegram-config.sh"
+
+# Загружаем credentials
+if [ -f "$CRED_FILE" ]; then
+    source "$CRED_FILE"
+elif [ -f "$CONFIG_FILE" ]; then
+    source "$CONFIG_FILE"
+else
+    echo "❌ Не найдены credentials!"
+    echo "Создай файл: $CRED_FILE"
+    echo ""
+    echo "Содержимое:"
+    echo "API_ID=твой_api_id"
+    echo "API_HASH=твой_api_hash"
+    exit 1
+fi
+
+# Проверяем наличие credentials
+if [ -z "$API_ID" ] && [ -z "$TG_API_ID" ]; then
+    echo "❌ API_ID не установлен!"
+    exit 1
+fi
+
+if [ -z "$API_HASH" ] && [ -z "$TG_API_HASH" ]; then
+    echo "❌ API_HASH не установлен!"
+    exit 1
+fi
+
+# Используем правильные переменные
+API_ID="${API_ID:-$TG_API_ID}"
+API_HASH="${API_HASH:-$TG_API_HASH}"
+
+# Проверка аргументов
+if [ $# -lt 1 ]; then
+    echo "Usage: tg-read <channel> [limit] [offset] [phone]"
+    echo ""
+    echo "Примеры:"
+    echo "  tg-read @ozoncheck"
+    echo "  tg-read https://t.me/ozoncheck 20"
+    echo "  tg-read ozoncheck 10 0"
+    echo "  tg-read ozoncheck 10 0 +79991234567  # для первой авторизации"
+    exit 1
+fi
+
+CHANNEL="$1"
+LIMIT="${2:-10}"
+OFFSET="${3:-0}"
+PHONE="${4:-}"
+
+# Запускаем Python скрипт
+if [ -n "$PHONE" ]; then
+    python3 "$SCRIPT_DIR/telegram-reader.py" "$API_ID" "$API_HASH" "$CHANNEL" "$LIMIT" "$OFFSET" "$PHONE"
+else
+    python3 "$SCRIPT_DIR/telegram-reader.py" "$API_ID" "$API_HASH" "$CHANNEL" "$LIMIT" "$OFFSET"
+fi

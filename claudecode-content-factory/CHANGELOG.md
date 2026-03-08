@@ -312,9 +312,9 @@
 
 ## Поддержка
 
-Сайт: [galson.pro](https://galson.pro) | Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support) | Канал: [@galsonproai](https://t.me/galsonproai)
+Сайт: [openclaw.ai](https://openclaw.ai) | Поддержка: [@Mticool](https://t.me/Mticool?start=support) | Канал: [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v1.14*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

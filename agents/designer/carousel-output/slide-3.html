@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, initial-scale=1.0">
+  <title>Слайд 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px;
+      height: 1350px;
+      background: #000000;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 30px;
+      padding: 80px 70px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.3);
+      max-width: 900px;
+    }
+    .title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #000000;
+      margin-bottom: 60px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+    .title span {
+      color: #D4A942;
+    }
+    .expense-list {
+      margin-bottom: 50px;
+    }
+    .expense {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 24px;
+      font-size: 32px;
+      color: #000000;
+    }
+    .expense .cross {
+      color: #D4A942;
+      font-weight: 700;
+      font-size: 36px;
+    }
+    .conclusion {
+      font-size: 36px;
+      color: #000000;
+      font-weight: 600;
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 2px solid rgba(0,0,0,0.1);
+    }
+    .conclusion span {
+      color: #D4A942;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">
+      РАСХОДЫ СЪЕДАЮТ<br>
+      <span>60-70% ВЫРУЧКИ</span>
+    </div>
+    
+    <div class="expense-list">
+      <div class="expense"><span class="cross">✗</span> Комиссии 47%</div>
+      <div class="expense"><span class="cross">✗</span> Логистика 15%</div>
+      <div class="expense"><span class="cross">✗</span> СПП/реклама 10%</div>
+      <div class="expense"><span class="cross">✗</span> Возвраты + брак</div>
+      <div class="expense"><span class="cross">✗</span> Зарплаты</div>
+    </div>
+    
+    <div class="conclusion">
+      Остаётся <span>30%</span>.<br>
+      Или минус.
+    </div>
+  </div>
+</body>
+</html>

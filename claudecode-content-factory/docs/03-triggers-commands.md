@@ -196,4 +196,4 @@ threads post про [тема]
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

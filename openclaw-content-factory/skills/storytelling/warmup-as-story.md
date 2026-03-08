@@ -1,6 +1,6 @@
 # Прогрев как 7-актная история продажи
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Прогрев — это не маркетинговая воронка. Это история, в которой аудитория — главный герой, а продукт — инструмент трансформации.
 

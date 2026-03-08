@@ -1,6 +1,6 @@
 # Система продаж Тимочко × Hormozi: Глубокий синтез
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Курс «Формула Запуска 5.0» — русскоязычная система запусков инфопродуктов.
 > Этот файл — не пересказ, а **синтез** с западными фреймворками (Hormozi, Walker, Brunson)

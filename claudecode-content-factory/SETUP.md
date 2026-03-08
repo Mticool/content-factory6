@@ -336,11 +336,11 @@ myproject threads 5
 - [ALL-SKILLS.md](ALL-SKILLS.md) — Описание каждого skill
 
 **Вопросы:**
-- Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-- Канал: [@galsonproai](https://t.me/galsonproai)
-- Сайт: [galson.pro](https://galson.pro)
+- Поддержка: [@Mticool](https://t.me/Mticool?start=support)
+- Канал: [@Mticool](https://t.me/Mticool)
+- Сайт: [openclaw.ai](https://openclaw.ai)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

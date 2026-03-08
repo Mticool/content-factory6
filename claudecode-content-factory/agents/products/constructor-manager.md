@@ -201,7 +201,7 @@ git push origin main
 
 ### 4. Уведомить пользователей
 
-- Telegram: @galsonproai
+- Telegram: @Mticool
 - Notion: "Фабрика Контента"
 
 ---

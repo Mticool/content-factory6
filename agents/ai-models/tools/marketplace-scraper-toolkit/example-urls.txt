@@ -1,0 +1,15 @@
+# Пример файла с URL для batch-парсинга
+# Каждый URL на отдельной строке
+# Строки начинающиеся с # игнорируются
+
+# Ozon товары
+https://ozon.ru/t/jQWorAz
+
+# Wildberries товары
+https://www.wildberries.ru/catalog/845753059/detail.aspx?size=1271209932
+
+# Avito объявления
+# https://www.avito.ru/moskva/tovary_dlya_kompyutera/...
+
+# Можно добавить до 15-20 URL (микс из Ozon, WB, Avito)
+# Скрипт автоматически добавит задержки между запросами

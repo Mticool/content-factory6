@@ -211,7 +211,7 @@ metadata:
 
 ## Notion база для Threads
 Рекомендуем использовать готовый Notion-шаблон для управления постами:
-→ [Дублировать шаблон](https://www.notion.so/galson/30c6ad1acb5980fb8afdc7692fe6feb4?v=30c6ad1acb59814791b0000c5518a605)
+→ [Дублировать шаблон](https://www.notion.so/Mticool/30c6ad1acb5980fb8afdc7692fe6feb4?v=30c6ad1acb59814791b0000c5518a605)
 
 Шаблон содержит: поля (Post, Status, Format, Topic, CTA Type, Image URL), 
 статусы (Draft → Pending → Approved → Published → Rejected),

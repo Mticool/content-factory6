@@ -1,6 +1,6 @@
 # Блог как сериал: Фреймворк сериальной драматургии
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Блог — не набор постов. Это сериал, где ты шоураннер, режиссёр и главный герой одновременно.
 

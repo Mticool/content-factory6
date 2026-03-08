@@ -37,7 +37,7 @@ sudo npm install -g @anthropic-ai/claude-code
 
 ### Через GitHub Template (рекомендуется):
 
-1. Открой конструктор: https://github.com/maximgalson/content-factory
+1. Открой конструктор: https://github.com/Mticool/content-factory
 2. Нажми зелёную кнопку **"Use this template"** → **"Create a new repository"**
 3. Назови как хочешь (например `my-content-factory`), нажми **Create**
 4. Склонируй СВОЮ копию:
@@ -47,7 +47,7 @@ cd my-content-factory
 ```
 
 ### Или через ZIP:
-1. Открой https://github.com/maximgalson/content-factory → **Code** → **Download ZIP**
+1. Открой https://github.com/Mticool/content-factory → **Code** → **Download ZIP**
 2. Распакуй
 3. Открой Терминал в этой папке:
 ```bash
@@ -165,7 +165,7 @@ carousel про [тему]
 Скажи `интервью` и пройди полную настройку. Или добавь примеры своих постов: скопируй удачный пост и скажи `это сработало`.
 
 **Как обновить конструктор?**
-Скачай свежую версию: https://github.com/maximgalson/content-factory → Code → Download ZIP. Скопируй `skills/` поверх своих (brand/ и learning/ НЕ трогай). Подробнее — см. [UPDATE.md](UPDATE.md).
+Скачай свежую версию: https://github.com/Mticool/content-factory → Code → Download ZIP. Скопируй `skills/` поверх своих (brand/ и learning/ НЕ трогай). Подробнее — см. [UPDATE.md](UPDATE.md).
 
 **Что если сломаю?**
 Ничего страшного. Твои данные (brand, learning) в безопасности — они хранятся отдельно от системных файлов.
@@ -174,11 +174,11 @@ carousel про [тему]
 
 ## Нужна помощь?
 
-- **Поддержка:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-- **Канал:** [@galsonproai](https://t.me/galsonproai) — обновления и лайфхаки
+- **Поддержка:** [@Mticool](https://t.me/Mticool?start=support)
+- **Канал:** [@Mticool](https://t.me/Mticool) — обновления и лайфхаки
 - **Подробная инструкция:** [INSTALL.md](INSTALL.md)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

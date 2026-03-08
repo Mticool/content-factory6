@@ -14,7 +14,7 @@ npm install -g @anthropic-ai/claude-code
 
 ### 2. Создай свою копию конструктора
 
-1. Открой конструктор: https://github.com/maximgalson/content-factory
+1. Открой конструктор: https://github.com/Mticool/content-factory
 2. Нажми зелёную кнопку **"Use this template"** → **"Create a new repository"**
 3. Назови как хочешь (например `my-content-factory`), нажми **Create**
 4. Склонируй СВОЮ копию:
@@ -192,9 +192,9 @@ A: Да, система полностью работает на русском 
 
 ## Поддержка
 
-- Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-- Канал: [@galsonproai](https://t.me/galsonproai)
-- Issues: [GitHub Issues](https://github.com/maximgalson/content-factory/issues)
+- Поддержка: [@Mticool](https://t.me/Mticool?start=support)
+- Канал: [@Mticool](https://t.me/Mticool)
+- Issues: [GitHub Issues](https://github.com/Mticool/content-factory/issues)
 
 ---
 
@@ -205,4 +205,4 @@ A: Да, система полностью работает на русском 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

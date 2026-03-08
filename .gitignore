@@ -27,3 +27,4 @@ memory/
 # Syncthing
 *.sync-conflict-*
 .syncthing.*
+agents/*/skills.backup*/

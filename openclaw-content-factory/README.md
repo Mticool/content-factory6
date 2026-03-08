@@ -1,6 +1,6 @@
 # OpenClaw Content Factory
 
-> Фабрика Контента через Telegram | Макс Галсон | [galson.pro](https://galson.pro)
+> Фабрика Контента через Telegram | Marat | [openclaw.ai](https://openclaw.ai)
 
 AI-бот в Telegram, который пишет контент в твоём стиле — по проверенным методикам.
 
@@ -8,8 +8,8 @@ AI-бот в Telegram, который пишет контент в твоём с
 
 ## Быстрый старт
 
-1. **Установи OpenClaw** → [Гайд](https://galson.pro/guides/openclaw-telegram)
-> @max: поставь ссылку на установку openclaw [с БАЗЫ ЗНАНИЙ ФАБРИКИ](https://fabrika.galson.pro/start/openclaw-telegram)
+1. **Установи OpenClaw** → [Гайд](https://openclaw.ai/guides/openclaw-telegram)
+> @max: поставь ссылку на установку openclaw [с БАЗЫ ЗНАНИЙ ФАБРИКИ](https://fabrika.openclaw.ai/start/openclaw-telegram)
 
 > @max: поставь ссылку на установку openclaw с БАЗЫ ЗНАНИЙ ФАБРИКИ
 
@@ -62,9 +62,9 @@ openclaw doctor --fix     # автоисправление
 openclaw gateway restart  # перезапуск
 ```
 
-**Поддержка:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
+**Поддержка:** [@Mticool](https://t.me/Mticool?start=support)
 
 ---
 
-*© Фабрика Контента | Макс Галсон | [galson.pro](https://galson.pro)*
+*© Фабрика Контента | Marat | [openclaw.ai](https://openclaw.ai)*
 

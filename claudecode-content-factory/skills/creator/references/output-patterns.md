@@ -1,6 +1,6 @@
 # Output Patterns
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 Use these patterns when skills need to produce consistent, high-quality output.
 

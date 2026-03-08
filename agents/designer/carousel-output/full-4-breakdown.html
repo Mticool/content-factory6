@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1080px; height: 1350px; background: #F5F5F5;
+      display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+      padding: 100px 80px; position: relative;
+    }
+    .star { position: absolute; top: 60px; left: 60px; font-size: 48px; color: #D4A942; font-weight: 900; }
+    .title { font-family: 'Montserrat', sans-serif; font-size: 56px; font-weight: 900;
+      color: #000; margin-bottom: 70px; line-height: 1.2; letter-spacing: -1px; }
+    .item { display: flex; align-items: center; margin-bottom: 28px; gap: 20px; }
+    .label { width: 260px; font-size: 28px; color: #000; font-weight: 600; }
+    .bar-wrap { flex: 1; height: 56px; background: #fff; border-radius: 10px;
+      position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, #D4A942 0%, #E5A836 100%); }
+    .percent { width: 90px; text-align: right; font-family: 'Montserrat', sans-serif;
+      font-size: 34px; font-weight: 900; color: #D4A942; }
+  </style>
+</head>
+<body>
+  <div class="star">✱</div>
+  <div class="title">Куда уходит выручка?</div>
+  <div class="item">
+    <div class="label">Комиссия</div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:47%;"></div></div>
+    <div class="percent">47%</div>
+  </div>
+  <div class="item">
+    <div class="label">Логистика</div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:15%;"></div></div>
+    <div class="percent">15%</div>
+  </div>
+  <div class="item">
+    <div class="label">Реклама</div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:10%;"></div></div>
+    <div class="percent">10%</div>
+  </div>
+  <div class="item">
+    <div class="label">Себестоимость</div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:20%;"></div></div>
+    <div class="percent">20%</div>
+  </div>
+  <div class="item">
+    <div class="label">Возвраты</div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:5%;"></div></div>
+    <div class="percent">5%</div>
+  </div>
+</body>
+</html>

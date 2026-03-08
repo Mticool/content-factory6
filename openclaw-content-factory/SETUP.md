@@ -80,7 +80,7 @@ openclaw status
 
 ### 2.1 Создай свою копию конструктора
 
-1. Открой конструктор: https://github.com/maximgalson/content-factory
+1. Открой конструктор: https://github.com/Mticool/content-factory
 2. Нажми зелёную кнопку **"Use this template"** → **"Create a new repository"**
 3. Назови как хочешь (например `my-content-factory`), нажми **Create**
 4. Склонируй СВОЮ копию:
@@ -204,7 +204,7 @@ openclaw gateway logs
 | "not allowed" | Проверь Telegram ID в конфиге |
 | Посты сырые / не по методике | Проверь что скиллы скопированы: `ls ~/.openclaw/workspace/skills/` |
 
-**Поддержка:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
+**Поддержка:** [@Mticool](https://t.me/Mticool?start=support)
 
 ---
 
@@ -213,7 +213,7 @@ openclaw gateway logs
 ### Обновление конструктора
 
 Конструктор обновляется через скачивание новой версии:
-1. Скачай свежую версию: https://github.com/maximgalson/content-factory → Code → Download ZIP
+1. Скачай свежую версию: https://github.com/Mticool/content-factory → Code → Download ZIP
 2. Распакуй и скопируй `skills/` поверх своих (brand/ и learning/ НЕ трогай)
 
 ```bash
@@ -239,4 +239,4 @@ openclaw gateway restart
 
 ---
 
-*© Фабрика Контента | Макс Галсон | [galson.pro](https://galson.pro)*
+*© Фабрика Контента | Marat | [openclaw.ai](https://openclaw.ai)*

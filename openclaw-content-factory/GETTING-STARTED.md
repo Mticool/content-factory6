@@ -159,7 +159,7 @@
 
 ### 3.3 SwipeFile база
 
-1. Скопируй шаблон: https://galson.notion.site/swipefile-factory
+1. Скопируй шаблон: https://notion.so/swipefile-factory
 2. Подключи интеграцию к скопированной базе (Share → Invite → твоя интеграция)
 3. Скажи агенту: "Настрой SwipeFile" — он спросит цель и запомнит ID базы
 
@@ -423,6 +423,6 @@ bash update.sh
 
 ---
 
-📖 База знаний: https://fabrika.galson.pro
-💬 Поддержка: @galsonproAIbot
+📖 База знаний: https://fabrika.openclaw.ai
+💬 Поддержка: @Mticool
 🔄 Обновления: `bash update.sh`

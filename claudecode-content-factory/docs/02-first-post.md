@@ -150,11 +150,11 @@ A: Отредактируй `brand/voice-style.md` в папке твоего п
 
 ## Поддержка
 
-Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
+Поддержка: [@Mticool](https://t.me/Mticool?start=support)
 
-Канал: [@galsonproai](https://t.me/galsonproai)
+Канал: [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

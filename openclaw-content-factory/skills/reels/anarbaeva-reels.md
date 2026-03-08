@@ -1,6 +1,6 @@
 # Анарбаева — Рилс и контент-форматы
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Источник: Курс Анарбаевой (2024) — кластер "Content & Reels"
 

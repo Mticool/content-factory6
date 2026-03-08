@@ -1,0 +1,17 @@
+# Environment
+.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Browser data
+.browser-data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

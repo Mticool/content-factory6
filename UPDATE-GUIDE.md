@@ -4,7 +4,7 @@
 
 ## Быстрое обновление (2 минуты)
 
-1. Открой GitHub → [конструктор](https://github.com/maximgalson/content-factory)
+1. Открой GitHub → [конструктор](https://github.com/Mticool/content-factory)
 2. Нажми зелёную кнопку **Code** → **Download ZIP**
 3. Файл скачается в папку **Загрузки** (Downloads)
 4. **Двойной клик** по `content-factory-main.zip` → распакуется папка
@@ -89,4 +89,4 @@ openclaw gateway restart
 
 ---
 
-*© Фабрика Контента | Макс Галсон | [galson.pro](https://galson.pro)*
+*© Фабрика Контента | Marat | [openclaw.ai](https://openclaw.ai)*

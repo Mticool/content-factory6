@@ -1,6 +1,6 @@
 # YouTube Thumbnails (Превью)
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 ## Когда использовать
 - Создание превью для видео

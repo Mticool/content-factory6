@@ -1,6 +1,6 @@
 # Карусели со скриншотами — Полный гайд
 
-> © Фабрика Контента | OpenClaw Content Factory | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | openclaw.ai
 
 ## Когда использовать
 

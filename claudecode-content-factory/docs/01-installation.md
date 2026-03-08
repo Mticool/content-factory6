@@ -72,7 +72,7 @@ claude
 
 ### Вариант B: Создал свою копию конструктора через GitHub
 
-1. Открой https://github.com/maximgalson/content-factory
+1. Открой https://github.com/Mticool/content-factory
 2. Нажми **"Use this template"** → **"Create a new repository"**
 3. Склонируй СВОЮ копию:
 
@@ -120,9 +120,9 @@ content-factory-template/
 - **Не авторизуется**: Убедись, что у тебя активная подписка Claude Max
 - **Не видит файлы**: Запусти `claude` из папки со скелетом
 
-Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support) | Канал: [@galsonproai](https://t.me/galsonproai)
+Поддержка: [@Mticool](https://t.me/Mticool?start=support) | Канал: [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

@@ -1,6 +1,6 @@
 # Продающая статья (Landing Article)
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Длинная продающая статья для холодного трафика. 6 блоков, которые ведут к покупке.
 

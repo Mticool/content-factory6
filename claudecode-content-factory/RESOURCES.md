@@ -23,4 +23,4 @@ npx skills i YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill
 
 ---
 
-*Список пополняется. Следите за обновлениями в канале [@galsonproai](https://t.me/galsonproai)*
+*Список пополняется. Следите за обновлениями в канале [@Mticool](https://t.me/Mticool)*

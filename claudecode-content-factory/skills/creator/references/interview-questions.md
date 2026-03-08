@@ -1,6 +1,6 @@
 # Interview Questions for Agent Discovery
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 Two modes: Quick (simple agents) and Deep (team-level agents).
 

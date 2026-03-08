@@ -19,7 +19,7 @@
 
 | Ключевые слова | Проект | Target |
 |----------------|--------|--------|
-| Max Galson, MG, Максим, медицина для немедиков | `max` | projects/max/learning/ |
+| Marat, MG, Максим, медицина для немедиков | `max` | projects/max/learning/ |
 | 36 часов, Dr Max, урология, андрология, DMG | `36hour` | projects/36hour/learning/ |
 | Ангелина, консультации, психология | `angelina` | projects/angelina/learning/ |
 | Ильнар, недвижимость, риелтор | `ilnar` | projects/ilnar/learning/ |
@@ -62,9 +62,9 @@
 - **Target:** plc-structure.md
 
 **Пример 3:**
-> "Max Galson в своих видео использует особый стиль..."
+> "Marat в своих видео использует особый стиль..."
 
-- Keywords: Max Galson
+- Keywords: Marat
 - **Project:** max
 - **Target:** projects/max/learning/ или projects/max/brand/
 

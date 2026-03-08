@@ -417,11 +417,11 @@ Node.js или Claude Code не установлены. Повтори шаги 
 
 Застрял? Не получается?
 
-**Бот поддержки:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
+**Бот поддержки:** [@Mticool](https://t.me/Mticool?start=support)
 
-**Канал с обновлениями:** [@galsonproai](https://t.me/galsonproai)
+**Канал с обновлениями:** [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v2.0*
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

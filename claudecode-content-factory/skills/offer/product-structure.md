@@ -1,6 +1,6 @@
 # Структура основного продукта (Сердитов)
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Сборка основного продукта: модули, бонусы, тарифы, ценообразование — всё в одном месте для лендинга.
 

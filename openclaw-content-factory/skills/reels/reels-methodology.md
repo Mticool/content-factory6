@@ -1,6 +1,6 @@
 # Методология вирусных Reels/Shorts/TikTok
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 > Полное руководство по созданию вертикального контента, который попадает в рекомендации и конвертируется в деньги.
 

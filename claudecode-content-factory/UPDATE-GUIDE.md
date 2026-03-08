@@ -45,7 +45,7 @@
 
 **Обновление (пошагово):**
 
-1. **Скачай** свежую версию: https://github.com/maximgalson/content-factory → Code → Download ZIP
+1. **Скачай** свежую версию: https://github.com/Mticool/content-factory → Code → Download ZIP
 2. **Распакуй** в отдельную папку (например, `content-factory-new`)
 3. **Скопируй** только системные файлы:
 
@@ -115,16 +115,16 @@ updated: 2026-01-17
 
 Новые версии анонсируются в:
 закрытом канале Фабрика Контента ()
-- Telegram-канал [@galsonproai](https://t.me/galsonproai)
+- Telegram-канал [@Mticool](https://t.me/Mticool)
 - Coworking эфиры (разбор новых features)
 
 ---
 
 ## Поддержка
 
-Сайт: [galson.pro](https://galson.pro) | Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support) | Канал: [@galsonproai](https://t.me/galsonproai)
+Сайт: [openclaw.ai](https://openclaw.ai) | Поддержка: [@Mticool](https://t.me/Mticool?start=support) | Канал: [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

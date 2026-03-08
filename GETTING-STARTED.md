@@ -1,177 +1,428 @@
-# Начни здесь — от скачивания до первого контента
+# 🏭 Конструктор Фабрики Контента — Полный роадмап
 
-> ⏱ 30-60 минут → готовая фабрика контента, которая пишет в твоём стиле
-
----
-
-## Шаг 1. Выбери свой вариант
-
-| | Claude Code | OpenClaw |
-|---|---|---|
-| **Что это** | AI-ассистент в терминале | AI-бот в Telegram |
-| **Для кого** | Есть Claude Max ($100/мес) | Есть API ключ Anthropic |
-| **Где работать** | Терминал / VS Code | Telegram на телефоне/компе |
-| **Уровень** | Нужно набрать 3 команды | Нужно уметь писать в Telegram |
-| **Режим** | По запросу (запустил → поработал → закрыл) | 24/7 (бот всегда на связи) |
-
-**Не знаешь что выбрать?**
-- Есть подписка Claude Max → [Claude Code](#вариант-a-claude-code)
-- Нет подписки / хочешь из Telegram → [OpenClaw](#вариант-b-openclaw)
+От установки до работающей системы с агентами, ботами и автоматизациями.
 
 ---
 
-## Вариант A: Claude Code
+## Фаза 1: Базовая настройка
 
-### Что понадобится
-- [ ] [Claude Max](https://claude.ai/pricing) ($100/мес) или Anthropic API ключ
-- [ ] [Node.js 18+](https://nodejs.org) (нажми LTS, установи)
-- [ ] Терминал (Mac: Программы → Утилиты → Терминал)
+### 1.1 Настрой бренд
 
-### Установка (5 минут)
+Заполни файлы в папке `brand/`:
+
+**brand/profile.md:**
+```markdown
+# Профиль бренда
+- Имя: [твоё имя или название]
+- Ниша: [чем занимаешься]
+- Продукт: [что продаёшь/делаешь]
+- Позиционирование: [чем отличаешься]
+```
+
+**brand/voice-style.md:**
+```markdown
+# Голос бренда
+- Обращение: ты / вы
+- Тон: [разговорный / экспертный / дружеский]
+- Особенности: [юмор, сленг, эмодзи — да/нет]
+- Примеры фраз: [как ты обычно говоришь]
+- Запрещённые слова: [что не используешь]
+```
+
+**brand/audience.md:**
+```markdown
+# Целевая аудитория
+- Кто: [возраст, пол, профессия]
+- Боли: [что болит]
+- Желания: [чего хотят]
+- Возражения: [почему не покупают]
+- Где сидят: [платформы]
+```
+
+💡 Или просто напиши агенту: **"Давай настроим бренд"** — он проведёт по шагам и сам заполнит файлы.
+
+### 1.2 Настрой SOUL.md
+
+`SOUL.md` — это личность твоего агента. Открой файл и пропиши:
+- Имя агента
+- Роль (контент-мейкер, помощник, копирайтер)
+- Как обращается к тебе
+- Границы (что делает, что нет)
+
+### 1.3 Настрой USER.md
+
+```markdown
+# USER.md
+- Имя: [твоё имя]
+- Telegram: @[username]
+- Timezone: [MSK, UTC+3 и т.д.]
+- Язык: русский
+```
+
+### 1.4 Первый тест
+
+Напиши агенту что-нибудь простое:
+- "Напиши пост для Threads про [твоя тема]"
+- "Придумай 5 идей для контента"
+
+Убедись что агент использует твой стиль из `brand/voice-style.md`.
+
+---
+
+## Фаза 2: Память
+
+### 2.1 Добавь конфиг памяти
+
+Открой `openclaw.json` (обычно `~/.openclaw/openclaw.json`) и добавь:
+
+```json
+{
+  "agents": {
+    "defaults": {
+      "compaction": {
+        "mode": "safeguard",
+        "reserveTokensFloor": 20000,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 6000
+        }
+      }
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": { "enabled": true }
+      }
+    }
+  },
+  "memory": {
+    "backend": "qmd",
+    "qmd": {
+      "includeDefaultMemory": true,
+      "sessions": {
+        "enabled": true,
+        "retentionDays": 30
+      }
+    }
+  }
+}
+```
+
+Подробности в `MEMORY-SETUP.md`.
+
+### 2.2 Проверь что работает
+
+Напиши агенту → поговори → закрой сессию → открой новую → спроси "Что мы обсуждали вчера?"
+
+Если помнит — память работает.
+
+### 2.3 Learning Loop
+
+Уже встроен в `AGENTS.md`. Когда ты говоришь:
+- "Отлично" → агент сохраняет что сработало
+- "Не то, сделай вот так" → агент сохраняет правило
+
+Со временем агент становится точнее.
+
+---
+
+## Фаза 3: Notion интеграция
+
+### 3.1 Создай интеграцию
+
+1. Зайди на https://www.notion.so/my-integrations
+2. Создай новую интеграцию
+3. Скопируй API ключ
+
+### 3.2 Добавь в конфиг
+
+В `openclaw.json` → `skills.entries`:
+
+```json
+"notion": {
+  "enabled": true,
+  "apiKey": "ntn_xxxxxxxxx"
+}
+```
+
+Или в `env.vars`:
+
+```json
+"env": {
+  "vars": {
+    "NOTION_API_KEY": "ntn_xxxxxxxxx"
+  }
+}
+```
+
+### 3.3 SwipeFile база
+
+1. Скопируй шаблон: https://Mticool.notion.site/swipefile-factory
+2. Подключи интеграцию к скопированной базе (Share → Invite → твоя интеграция)
+3. Скажи агенту: "Настрой SwipeFile" — он спросит цель и запомнит ID базы
+
+Дальше просто кидай ссылки на видео — агент разберёт и положит в Notion.
+
+---
+
+## Фаза 4: Telegram бот
+
+### 4.1 Создай бота
+
+1. Открой @BotFather в Telegram
+2. `/newbot` → придумай имя и username
+3. Скопируй токен (формат: `123456:ABC-DEF...`)
+
+### 4.2 Подключи к OpenClaw
+
+В `openclaw.json`:
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "telegram": { "enabled": true }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "groupPolicy": "allowlist",
+      "streaming": "partial",
+      "actions": {
+        "reactions": true,
+        "sendMessage": true
+      },
+      "accounts": {
+        "default": {
+          "botToken": "ТВОЙ_ТОКЕН",
+          "dmPolicy": "allowlist",
+          "allowFrom": [ТВОЙ_TELEGRAM_ID],
+          "groupPolicy": "allowlist",
+          "streaming": "partial"
+        }
+      }
+    }
+  }
+}
+```
+
+💡 Свой Telegram ID можно узнать у @userinfobot
+
+### 4.3 Проверь
+
+Перезапусти OpenClaw (`openclaw gateway restart`) и напиши боту в Telegram. Должен ответить.
+
+---
+
+## Фаза 5: Группа с топиками
+
+### 5.1 Создай группу
+
+1. Создай группу в Telegram
+2. Включи "Темы" (Topics) в настройках группы
+3. Добавь бота в группу и сделай администратором
+
+### 5.2 Создай топики
+
+Рекомендуемая структура:
+- **💬 Общий** — основной чат с агентом
+- **📝 Контент** — задачи по контенту
+- **📊 Аналитика** — разборы и SwipeFile
+- **🧠 Обучение** — логи обучения агента
+
+### 5.3 Привяжи группу
+
+В `openclaw.json` → `channels.telegram.accounts.default.groups`:
+
+```json
+"groups": {
+  "ID_ГРУППЫ": {
+    "requireMention": false,
+    "enabled": true
+  }
+}
+```
+
+💡 ID группы можно узнать: добавь @getmyid_bot в группу.
+
+---
+
+## Фаза 6: Второй агент
+
+### 6.1 Зачем
+
+Один агент — хорошо. Два — лучше:
+- **Агент 1:** Контент (пишет, редактирует)
+- **Агент 2:** Аналитика (SwipeFile, исследования)
+
+Или по ролям: копирайтер + дизайнер, стратег + исполнитель.
+
+### 6.2 Создай второго бота
+
+Повтори шаг 4.1 — новый бот у @BotFather.
+
+### 6.3 Добавь агента
+
+В `openclaw.json` → `agents.list` добавь:
+
+```json
+{
+  "id": "copywriter",
+  "name": "Копирайтер",
+  "workspace": "/путь/к/workspace/copywriter",
+  "model": "anthropic/claude-opus-4-6",
+  "identity": {
+    "name": "Копирайтер",
+    "emoji": "✍️"
+  }
+}
+```
+
+### 6.4 Создай workspace
 
 ```bash
-# 1. Установи Claude Code
-npm install -g @anthropic-ai/claude-code
-
-# 2. Создай свою копию конструктора
-#    Открой https://github.com/maximgalson/content-factory
-#    Нажми "Use this template" → "Create a new repository"
-#    Назови как хочешь (например my-content-factory), нажми Create
-
-# 3. Склонируй СВОЮ копию
-git clone https://github.com/ТВОЙ_ЮЗЕРНЕЙМ/my-content-factory.git
-
-# 4. Перейди в папку
-cd my-content-factory/claudecode-content-factory
-
-# 5. Запусти
-claude
+mkdir -p /путь/к/workspace/copywriter
 ```
 
-### Первый контент (10 минут)
+Скопируй туда из конструктора:
+- `SOUL.md` (пропиши роль копирайтера)
+- `AGENTS.md`
+- `MEMORY.md`
+- `skills/` (симлинк или копия)
+- `brand/` (симлинк — чтобы бренд был общий)
+- `learning/` (отдельная — каждый агент учится сам)
 
-Напиши в чат с Claude:
-```
-начать
+### 6.5 Привяжи к Telegram
+
+В `bindings` добавь:
+
+```json
+{
+  "agentId": "copywriter",
+  "match": {
+    "channel": "telegram",
+    "accountId": "copywriter"
+  }
+}
 ```
 
-Claude спросит:
-1. **Кто ты?** → расскажи о себе и своей экспертизе
-2. **Для кого пишешь?** → опиши свою аудиторию
-3. **Как общаешься?** → на ты/Вы, тепло/строго
+В `channels.telegram.accounts` добавь:
 
-После ответов получишь первые 3 поста. Дальше:
-```
-threads 5          → 5 постов для Threads
-youtube script AI  → сценарий для YouTube
-carousel ошибки    → карусель про типичные ошибки
+```json
+"copywriter": {
+  "botToken": "ТОКЕН_ВТОРОГО_БОТА",
+  "dmPolicy": "allowlist",
+  "allowFrom": [ТВОЙ_TELEGRAM_ID],
+  "groupPolicy": "allowlist",
+  "groups": {
+    "ID_ГРУППЫ": {
+      "requireMention": false,
+      "enabled": true
+    }
+  },
+  "streaming": "partial",
+  "actions": { "reactions": true, "sendMessage": true }
+}
 ```
 
-📖 **Подробнее:** [claudecode-content-factory/INSTALL.md](./claudecode-content-factory/INSTALL.md)
+### 6.6 Группа с топиками для двоих
+
+Можно:
+- **Одна группа** — оба бота в одной, разные топики
+- **Две группы** — у каждого агента своя
 
 ---
 
-## Вариант B: OpenClaw
+## Фаза 7: Межагентное общение
 
-### Что понадобится
-- [ ] Anthropic API ключ ([console.anthropic.com](https://console.anthropic.com)) — ~$20-50/мес
-- [ ] Telegram бот (бесплатно через [@BotFather](https://t.me/BotFather))
-- [ ] Компьютер или VPS
+### 7.1 Включи agent-to-agent
 
-### Установка на компьютере (15 минут)
+В `openclaw.json`:
+
+```json
+"tools": {
+  "agentToAgent": {
+    "enabled": true,
+    "allow": ["main", "copywriter"]
+  }
+}
+```
+
+### 7.2 Разреши subagents
+
+У каждого агента в `agents.list`:
+
+```json
+"subagents": {
+  "allowAgents": ["copywriter"]
+}
+```
+
+И у копирайтера:
+
+```json
+"subagents": {
+  "allowAgents": ["main"]
+}
+```
+
+### 7.3 Как это работает
+
+Теперь агенты могут:
+- Отправлять друг другу сообщения
+- Делегировать задачи
+- Координировать работу
+
+Пример: основной агент получает задачу "напиши пост" → передаёт копирайтеру → получает результат → отдаёт тебе.
+
+---
+
+## Фаза 8: Развитие
+
+### 8.1 Обучай через фидбек
+
+Каждая коррекция = правило. Через неделю агент знает твой стиль.
+
+### 8.2 Создавай свои скиллы
+
+Напиши агенту: "Создай скилл для [задача]" — он использует скилл `creator`.
+
+### 8.3 Обновляй конструктор
 
 ```bash
-# 1. Установи OpenClaw
-npm install -g openclaw
-
-# 2. Настрой (API ключ + Telegram бот)
-openclaw onboard
-
-# 3. Создай свою копию конструктора
-#    Открой https://github.com/maximgalson/content-factory
-#    Нажми "Use this template" → "Create a new repository"
-#    Назови как хочешь (например my-content-factory), нажми Create
-
-# 4. Склонируй СВОЮ копию
-git clone https://github.com/ТВОЙ_ЮЗЕРНЕЙМ/my-content-factory.git
-
-# 5. Скопируй скиллы
-cp -r my-content-factory/openclaw-content-factory/skills/* ~/.openclaw/workspace/skills/
-cp -r my-content-factory/openclaw-content-factory/workspace/* ~/.openclaw/workspace/
-
-# 6. Перезапусти
-openclaw gateway restart
+bash update.sh
 ```
 
-### Установка на VPS (24/7, 30 минут)
+Новые скиллы, улучшения — не трогая твои настройки.
 
-Если хочешь чтобы бот работал круглосуточно — поставь на VPS:
+### 8.4 Добавляй агентов
 
-📖 **Пошаговая инструкция:** [openclaw-content-factory/VPS-INSTALL.md](./openclaw-content-factory/VPS-INSTALL.md)
-
-### Первый контент (5 минут)
-
-Напиши боту в Telegram:
-```
-начать
-```
-
-Ответь на 3 вопроса → получишь первые посты. Дальше:
-```
-threads 5          → 5 постов для Threads
-youtube script AI  → сценарий для YouTube
-carousel ошибки    → карусель
-```
-
-📖 **Подробнее:** [openclaw-content-factory/SETUP.md](./openclaw-content-factory/SETUP.md)
+По мере роста добавляй специализированных агентов:
+- Дизайнер (генерация картинок)
+- Маркетолог (стратегия, аналитика)
+- Публикатор (автопостинг)
 
 ---
 
-## Шаг 2. Углуби настройку (по желанию)
+## Чеклист готовности
 
-### Полное интервью
-```
-интервью
-```
-20-30 минут. После него контент будет намного точнее.
-
-### Notion для Threads
-Готовый шаблон базы для управления постами — ссылка внутри threads скилла.
-
-### Обучение системы
-После публикации давай обратную связь:
-```
-это сработало       → запомнит удачный формат
-это не сработало    → запомнит что не работает
-```
+- [ ] brand/ заполнен
+- [ ] SOUL.md настроен
+- [ ] Память включена (3 слоя)
+- [ ] Агент отвечает и помнит контекст
+- [ ] Notion подключён (опционально)
+- [ ] SwipeFile работает (опционально)
+- [ ] Telegram бот подключён
+- [ ] Группа с топиками создана
+- [ ] Второй агент (когда готов)
+- [ ] Межагентное общение (когда 2+ агента)
 
 ---
 
-## Шаг 3. Обновляйся
-
-### Обновление конструктора
-
-Конструктор обновляется через скачивание новой версии:
-1. Скачай свежую версию: https://github.com/maximgalson/content-factory → Code → Download ZIP
-2. Распакуй и скопируй `skills/` поверх своих (brand/ и learning/ НЕ трогай)
-
-Твои данные (brand, learning, projects) не затрагиваются — обновляются только скиллы и система.
-
-📖 **История обновлений:** [CHANGELOG.md](./CHANGELOG.md)
-
----
-
-## Что-то не работает?
-
-| Проблема | Решение |
-|----------|---------|
-| Claude не видит скиллы | Проверь что запускаешь из папки `claudecode-content-factory/` |
-| Бот не отвечает | `openclaw doctor` — диагностика и подсказки. Затем `openclaw doctor --fix` — автоисправление. Если не помогло — `openclaw gateway restart` |
-| Посты не похожи на меня | Скажи `интервью` — перенастроим голос |
-| Ошибка API ключа | `openclaw doctor` покажет проблему. Проверь баланс на console.anthropic.com |
-
-**Поддержка:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-
----
-
-*© Фабрика Контента | Макс Галсон | [galson.pro](https://galson.pro)*
+📖 База знаний: https://fabrika.openclaw.ai
+💬 Поддержка: @Mticool
+🔄 Обновления: `bash update.sh`

@@ -22,7 +22,7 @@
 
 Папка skills/ должна содержать threads/, youtube/, carousel/ и другие.
 Если папка пустая — создай свою копию конструктора заново:
-  https://github.com/maximgalson/content-factory → "Use this template"
+  https://github.com/Mticool/content-factory → "Use this template"
 ```
 
 ---
@@ -151,9 +151,9 @@
 
 ## Поддержка
 
-- Поддержка: [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-- Канал: [@galsonproai](https://t.me/galsonproai)
-- База знаний: [galson.pro/fabrika](https://galson.pro/fabrika)
+- Поддержка: [@Mticool](https://t.me/Mticool?start=support)
+- Канал: [@Mticool](https://t.me/Mticool)
+- База знаний: [openclaw.ai/fabrika](https://openclaw.ai/fabrika)
 
 ---
 
@@ -176,4 +176,4 @@
 ---
 
 *Фабрика Контента v1.15*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

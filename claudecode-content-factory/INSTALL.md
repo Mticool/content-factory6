@@ -38,7 +38,7 @@ sudo npm install -g @anthropic-ai/claude-code
 
 ### Вариант A: Через GitHub Template (рекомендуется)
 
-1. Открой конструктор: https://github.com/maximgalson/content-factory
+1. Открой конструктор: https://github.com/Mticool/content-factory
 2. Нажми зелёную кнопку **"Use this template"** → **"Create a new repository"**
 3. Назови как хочешь (например `my-content-factory`), нажми **Create**
 4. Склонируй СВОЮ копию:
@@ -50,7 +50,7 @@ cd my-content-factory
 
 ### Вариант B: ZIP-архив
 
-1. Открой https://github.com/maximgalson/content-factory
+1. Открой https://github.com/Mticool/content-factory
 2. Нажми зелёную кнопку **Code** → **Download ZIP**
 3. Распакуй архив в удобное место
 4. Переименуй папку в `content-factory` (без лишних суффиксов)
@@ -227,10 +227,10 @@ threads продающий пост про мой продукт
 
 - **Документация:** папка `docs/` в конструкторе
 - **Пример готового проекта:** `projects/example-psychologist/`
-- **Поддержка:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-- **Канал:** [@galsonproai](https://t.me/galsonproai)
+- **Поддержка:** [@Mticool](https://t.me/Mticool?start=support)
+- **Канал:** [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

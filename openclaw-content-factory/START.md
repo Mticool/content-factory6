@@ -117,4 +117,4 @@ cp -r projects/_template projects/{имя}
 
 ---
 
-*Фабрика Контента v1.17 | 30 скиллов | galson.pro*
+*Фабрика Контента v1.17 | 30 скиллов | openclaw.ai*

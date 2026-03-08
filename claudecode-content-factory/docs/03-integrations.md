@@ -300,4 +300,4 @@ A: Google Sheets вместо Notion, Zapier Free вместо n8n.
 ---
 
 *Фабрика Контента v2.0*
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

@@ -1,0 +1,12 @@
+{
+  "name": "video-factory",
+  "version": "1.1.0",
+  "description": "Video production CLI: auto-subs + auto-cut + auto-assemble → FCPXML",
+  "bin": {
+    "auto-subs": "./src/auto-subs.js",
+    "auto-cut": "./src/auto-cut.js",
+    "auto-assemble": "./src/auto-assemble.js"
+  },
+  "type": "module",
+  "license": "UNLICENSED"
+}

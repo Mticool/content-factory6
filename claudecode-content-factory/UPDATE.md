@@ -45,7 +45,7 @@ cat VERSION
 
 ### Шаг 1. Скачай новую версию
 
-Скачай свежую версию: https://github.com/maximgalson/content-factory → Code → Download ZIP
+Скачай свежую версию: https://github.com/Mticool/content-factory → Code → Download ZIP
 
 Распакуй в **отдельную** папку (например, `content-factory-new`).
 
@@ -157,7 +157,7 @@ cp -r skills/threads skills/threads-my-backup
 
 ## Откуда узнавать об обновлениях
 
-- **Telegram-канал:** [@galsonproai](https://t.me/galsonproai)
+- **Telegram-канал:** [@Mticool](https://t.me/Mticool)
 - **Coworking-эфиры** (каждую субботу) — разбор новых функций
 - **CHANGELOG.md** — полная история изменений
 
@@ -179,10 +179,10 @@ cp -r skills/threads skills/threads-my-backup
 ## Помощь
 
 - **Документация:** `docs/` в конструкторе
-- **Поддержка:** [@galsonproAIbot](https://t.me/galsonproAIbot?start=support)
-- **Канал:** [@galsonproai](https://t.me/galsonproai)
+- **Поддержка:** [@Mticool](https://t.me/Mticool?start=support)
+- **Канал:** [@Mticool](https://t.me/Mticool)
 
 ---
 
 *Фабрика Контента v2.0*  
-*Макс Галсон • [galson.pro](https://galson.pro)*
+*Marat • [openclaw.ai](https://openclaw.ai)*

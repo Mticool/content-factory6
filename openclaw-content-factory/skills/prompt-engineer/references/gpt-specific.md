@@ -1,6 +1,6 @@
 # GPT-Specific Prompt Engineering
 
-> © Фабрика Контента | OpenClaw Content Factory | Макс Галсон | https://t.me/galsonproai | galson.pro
+> © Фабрика Контента | OpenClaw Content Factory | Marat | https://t.me/Mticool | openclaw.ai
 
 Detailed guide for optimizing prompts for OpenAI's GPT models (GPT-4, GPT-4 Turbo, o1, o3).
 
